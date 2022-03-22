@@ -1,0 +1,11 @@
+{
+	"title":"Python项目管理器",
+	"name":"pythonmamager",
+	"ps":"管理多版本Python和项目",
+	"versions":"2.0",
+	"checks":"/www/server/panel/plugin/pythonmamager/pythonmamager_main.py",
+	"author":"宝塔",
+	"beta": false,
+	"force_message": "",
+	"not_substituted":["config.json|f"]
+}

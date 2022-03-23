@@ -328,7 +328,7 @@ lazy-apps=true'""".format(
         #     public.ExecShell("mkdir %s"%values["path"])
         if values["git_uri"] !="":
             if not os.path.exists(self.tmp_path):
-                os.path.mkdir(self.tmp_path)
+                os.mkdir(self.tmp_path)
             public.ExecShell("git clone %s '/www/server/panel/plugin/pythonmamager/tmp/%s'"%(values["git_uri"],values['pjname']))
             public.ExecShell("\cp -r %s/%s/* %s"%(self.tmp_path,values['pjname'],values['path']))
             public.ExecShell("rm -rf %s/*"%self.tmp_path)
